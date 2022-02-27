@@ -57,4 +57,4 @@ login = ""
 password = ""
 ```
 
-See an [example](blob/main/ggm.toml.example).
+See an [example](/ggm.toml.example).
