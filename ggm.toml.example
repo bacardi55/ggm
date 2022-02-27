@@ -1,0 +1,33 @@
+# Configuration file for Go Gemini Mention (aka ggm).
+# This file should be kept outside of your capsule root to avoid access to it!
+
+# Global configuration
+# Capsule root address, without the "gemini://" URL scheme.
+# Example: "gmi.bacardi55.io" or "mydomain.com/~user"
+capsuleRootAddress = "mydomain.net"
+# The maximum number of mentions you would like to see in the notification.
+# This will limit the number of requests you send to your own capsule.
+# Normally it should be one, but a limit prevent abuse :).
+maxMentions = 2
+# The email address you want to receive the notification to.
+contact = "user@example.com"
+
+# The access to the log file to use:
+log = "/tmp/ggm.log"
+
+# Notification configuration
+# For now, you need to indicate in clear the login/password.
+# It isn't very secure but this is the first pass at this tool :)
+# I strongly suggest that you use a dedicated email account for this just in case.
+# If gemini mention start to be more used, I'll add a better way.
+
+# The address of the smtp server:
+smtpServer = "mail.example.net"
+# The port of the smtp server:
+port = 587
+# The email of the sender (from field):
+from = "sender@example.net"
+# The login/user (often the email address)
+login = ""
+# The password for the above user:
+password = ""
