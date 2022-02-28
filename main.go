@@ -38,7 +38,7 @@ type GGMConfig struct {
 
 func main() {
 	if os.Getenv("QUERY_STRING") == "" {
-		fmt.Println("10\ttext/gemtext\r\n")
+		fmt.Println("10 Enter the URL containing mentions:\r\n")
 		fmt.Println("Enter the URL containing mentions: ")
 		os.Exit(0)
 	}
@@ -62,7 +62,7 @@ func main() {
 	toml.Unmarshal(configContent, &config)
 
 	// Starting the response:
-	fmt.Println("20\ttext/gemini\r\n")
+	fmt.Println("20 text/gemini\r\n")
 
 	err = configureLogs(config.Log)
 	if err != nil {
