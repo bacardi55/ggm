@@ -39,7 +39,6 @@ type GGMConfig struct {
 func main() {
 	if os.Getenv("QUERY_STRING") == "" {
 		fmt.Println("10 Enter the URL containing mentions:\r\n")
-		fmt.Println("Enter the URL containing mentions: ")
 		os.Exit(0)
 	}
 
