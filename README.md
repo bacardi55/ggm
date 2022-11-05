@@ -1,3 +1,5 @@
+Official repository and project is on [codeberg](https://codeberg.org/bacardi55/ggm). Github is only a mirror.
+
 # Go Gemini Mention
 
 This is a small program to manage Gemini mention.
