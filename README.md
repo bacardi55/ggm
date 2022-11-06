@@ -2,6 +2,12 @@ Official repository and project is on [codeberg](https://codeberg.org/bacardi55/
 
 # Go Gemini Mention
 
+[![builds.sr.ht status](https://builds.sr.ht/~bacardi55/ggm.svg)](https://builds.sr.ht/~bacardi55/ggm?)
+[![license: AGPL-3.0-only](https://img.shields.io/badge/license-AGPL--3.0--only-informational.svg)](LICENSE)
+
+Official repository and project is on [sourcehut](https://git.sr.ht/~bacardi55/ggm). Github and codeberg are only mirrors.
+
+
 This is a small program to manage Gemini mention.
 
 WARNING: This is a very beta program to implement the gemini mention RFC, use with caution!
