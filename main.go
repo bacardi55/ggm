@@ -114,7 +114,7 @@ func main() {
 	if len(links) < config.MaxMentions {
 		config.MaxMentions = len(links)
 	}
-	//mentions := make([]string, config.MaxMentions)
+
 	mentions := []string{}
 	for i := 0; i < config.MaxMentions; i++ {
 		l := extractLinkFromMention(links[i], config.CapsuleRootAddress)
@@ -190,13 +190,13 @@ func endResponse() {
 }
 
 func findMentionLinks(content string, capsuleRootAddress string) []string {
-	exp := "(?im)^(=>)[ ]?gemini://" + capsuleRootAddress + "[^ ]+[ ]RE:[ ]?(.*)$"
+	exp := "(?im)^(=>)[ ]?gemini://" + capsuleRootAddress + "[^ ]+[ ](.*)$"
 	re := regexp.MustCompile(exp)
 	return re.FindAllString(content, -1)
 }
 
 func extractLinkFromMention(mention string, capsuleRootAddress string) string {
-	exp := "(?im)^=>[ ]?(?P<mentionUrl>gemini://" + capsuleRootAddress + "[^ ]+)[ ]RE:[ ]?.*$"
+	exp := "(?im)^=>[ ]?(?P<mentionUrl>gemini://" + capsuleRootAddress + "[^ ]+)[ ]?.*$"
 	re := regexp.MustCompile(exp)
 	matches := re.FindStringSubmatch(mention)
 	index := re.SubexpIndex("mentionUrl")
