@@ -1,4 +1,4 @@
-Official repository and project is on [codeberg](https://codeberg.org/bacardi55/ggm). Github is only a mirror.
+Official repository and project is on [soucehut](https://git.sr.ht/~bacardi55/ggm). This repository is archived.
 
 # Go Gemini Mention
 
